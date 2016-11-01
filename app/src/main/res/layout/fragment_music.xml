@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:id="@+id/music_toolbar_llayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView android:id="@+id/music_musicnum_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/musicnum"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/music_playall_rlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_below="@id/music_toolbar_llayout">
+
+        <ImageView android:id="@+id/music_playstatus_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_fullcircle"/>
+        <RelativeLayout android:id="@+id/music_playallmusic_rlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/music_playstatus_iv">
+            <ImageView android:id="@+id/music_startplay_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_play"/>
+            <TextView android:id="@+id/music_startplay_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/music_startplay_iv"
+                android:layout_marginStart="15dp"
+                android:textSize="17sp"
+                android:text="@string/start_play"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/music_playcontent_rlayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/color_white"
+        android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/music_playcontent_albumic_iv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_mp3_default"/>
+        <LinearLayout android:id="@+id/music_playcontent_options_llayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+            <ImageView android:id="@+id/music_playcontent_previous_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_last"/>
+            <ImageView android:id="@+id/music_playcontent_pause_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_play_empty"/>
+            <ImageView android:id="@+id/music_playcontent_next_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/ic_next"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/music_playcontent_song_llayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/music_playcontent_options_llayout"
+            android:layout_toEndOf="@id/music_playcontent_albumic_iv">
+
+            <TextView android:id="@+id/music_playcontent_songname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/songname"
+                android:textSize="14sp"/>
+            <TextView android:id="@+id/music_playcontent_artistname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/artistname"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:textColor="@color/color_gray"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/music_recyclerview_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_above="@id/music_playcontent_rlayout"
+        android:layout_below="@id/music_playall_rlayout">
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

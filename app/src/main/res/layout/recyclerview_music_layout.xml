@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout android:id="@+id/music_item_llayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <TextView android:id="@+id/music_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/color_blank"
+            android:text="爱很简单"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <ImageView android:id="@+id/music_playericon_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_playpiano"/>
+            <TextView android:id="@+id/music_artist_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/color_gray"
+                android:text="陶喆"/>
+            <TextView android:id="@+id/music_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:textSize="15sp"
+                android:textColor="@color/color_gray"
+                android:text="03:03"/>
+        </LinearLayout>
+        <TextView android:id="@+id/music_size_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="17sp"
+            android:textColor="@color/color_gray"
+            android:text="5M"/>
+    </LinearLayout>
+</RelativeLayout>

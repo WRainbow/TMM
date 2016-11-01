@@ -1,0 +1,80 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.srainbow.fragment.drawer.EncourageEachOtherFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/encourage_title_llayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:background="@color/colorPrimary">
+            <ImageView android:id="@+id/encourage_backicon_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/ic_back"/>
+            <TextView android:id="@+id/encourage_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/encourage_eachother"
+                android:textSize="25sp"
+                android:textColor="#FFF"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/encourage_title_llayout"
+            android:layout_marginTop="15dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp">
+
+            <TextView android:id="@+id/encourage_story_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/encourage_eachother_2" />
+            <TextView android:id="@+id/encourage_from_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentEnd="true"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_below="@id/encourage_story_tv"
+                android:text="@string/from_yijihu"/>
+            <TextView android:id="@+id/encourage_eachother_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_below="@id/encourage_from_tv"
+                android:text="@string/encourage_eachother_1"/>
+            <TextView android:id="@+id/encourage_eachother_3_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/encourage_eachother_1"
+                android:layout_marginTop="35dp"
+                android:text="@string/encourage_eachother_3"/>
+
+            <TextView android:id="@+id/encourage_envy_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/encourage_eachother_3_tv"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center_horizontal"
+                android:text="@string/envy"/>
+            <include
+                layout="@layout/smileicon_srainbowwords"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@id/encourage_envy_tv"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

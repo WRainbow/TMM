@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">十分多</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="picture">趣图</string>
+    <string name="joke">逗你玩</string>
+    <string name="shareelement">funny_picture</string>
+    <string name="musicnum">共找到本地歌曲:%1$d</string>
+    <string name="start_play">播放全部</string>
+    <string name="newsfornowover">本时段的%1$s新闻全都在这啦= =</string>
+    <string name="loadmore">上拉加载更多</string>
+    <string name="loading">正在加载…</string>
+    <string name="music_duration">%1$d</string>
+    <string name="music_size">%1$d</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="introduce">APP简介</string>
+    <string name="about">关于</string>
+    <string name="encourage_eachother">共勉</string>
+    <string name="songname">未知歌曲</string>
+    <string name="artistname">未知歌手</string>
+    <string name="author">SRainbow</string>
+    <string name="from_yijihu">- 摘自 《一句话心情签名》</string>
+    <string name="introduce_text">
+        \n\t
+        没错！我就是一名海贼迷。。。
+            \n\n\t\t
+            这个APP并没有很强大的功能
+            \n\t\t
+            但你可以在十多分钟里看到十分多的内容
+        \n\n\t\t
+        你可以每天花十分多钟来阅读这个APP
+            \n\t\t
+            每页面看十多条新闻
+        \n\n\t
+        这里涉及了九个领域的实时新闻
+        \n\n\t\t
+        这里会让你开怀一笑
+            \n\t\t
+            在这里，你不仅可以了解各圈大事
+            \n\t\t
+            还有你意想不到的奇人囧事
+        \n\n\t
+        阅读还可以听音乐喔~ ~
+    </string>
+    <string name="introduce_text_2">
+        \t由于本软件还有很多不足之处（怎么会没有收藏功能呢？）
+        \n\n\t是的，现在真没有，不过很快，更多新功能即将上线
+        \n\n\t\t\t期待ing…
+    </string>
+    <string name="cannotwait">
+        \t\t如果有BUG，受不了啦！，往下找我…
+        \n\n\t\t联系我：nianyou1876（微信号）
+    </string>
+    <string name="encourage_eachother_1">
+        \t谁都有过去，但不要让过去妨碍了自己去创造未来！
+        \n\n\t\t\t不要用十年后的眼光批判十年前的自己，这样不公平
+    </string>
+    <string name="encourage_eachother_2">
+        \n\t年轻人搭出租车到一个生疏的地方。一路上连遇几个红灯，眼看到目的地了，又是红灯。
+        \n\n\t他就嘟哝：“真倒霉，老是差一步！”
+        \n\n\t这时出租车司机说：“不倒霉。上帝很公平，绿灯时我们是第一个走。”
+        \n\n\t
+        红灯，给了我们思考和欣赏
+        \n\n\t
+        人生有时需要停一停，并不是一味的往前冲。
+    </string>
+    <string name="encourage_eachother_3">
+        \t既然选择了远方，奋斗的路上就要风雨兼程…
+        \n\n\t\t\t记得带上 十分多 喔~ ~（一不小心打了波广告QAQ）
+    </string>
+    <string name="envy">
+        成为一个让自己羡慕的人…</string>
+    <string name="api_address">
+        这个是我个人写的小程序，数据是由开放平台提供
+        \n\n数据来源：https://www.juhe.cn/（聚合数据）
+    </string>
+    <string name="contactme">
+        联系我：nianyou1876(微信)
+    </string>
+</resources>

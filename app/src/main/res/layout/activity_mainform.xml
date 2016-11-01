@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_drawerlayout_dlayout"
+    tools:context="com.srainbow.activity.MainFormActivity"
+    android:background="@color/colorBackGround">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/main_toolbar_include"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            layout="@layout/toolbar_layout"/>
+        <LinearLayout android:id="@+id/main_showfragment_llayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/main_toolbar_include"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/main_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#E0EEE0"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:background="@drawable/ic_yijijng">
+            <!--
+            <ImageView android:id="@+id/main_drawer_headportrait_iv"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_10mm_100"/>
+                -->
+
+        </RelativeLayout>
+        <TextView android:id="@+id/main_drawer_introduce_tv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="45dp"
+            android:gravity="center"
+            android:text="@string/introduce"
+            android:textSize="20sp"
+            android:textColor="@color/color_blank"/>
+        <TextView android:id="@+id/main_drawer_encourage_eachother_tv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/encourage_eachother"
+            android:textSize="20sp"
+            android:textColor="@color/color_blank"/>
+        <TextView android:id="@+id/main_drawer_about_tv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/about"
+            android:textSize="20sp"
+            android:textColor="@color/color_blank"/>
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

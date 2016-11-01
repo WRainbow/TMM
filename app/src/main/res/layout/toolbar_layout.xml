@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar_tb"
+    android:layout_width="match_parent"
+    android:layout_height="50sp"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView android:id="@+id/toolbar_mulu_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_three_lines"/>
+        <LinearLayout android:id="@+id/toolbar_showcontent_llayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView android:id="@+id/toolbar_llayout_news_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_news_changed"/>
+            <ImageView android:id="@+id/toolbar_llayout_smile_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35sp"
+                android:background="@drawable/ic_smile"/>
+            <ImageView android:id="@+id/toolbar_llayout_music_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35sp"
+                android:background="@drawable/ic_music"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

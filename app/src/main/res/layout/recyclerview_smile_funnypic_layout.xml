@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="15dp"
+    android:background="@drawable/selector_textview">
+
+    <RelativeLayout
+        android:id="@+id/funnypic_shownormal_rlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <TextView android:id="@+id/funnypic_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/funnypic_title_tv">
+            <ImageView android:id="@+id/funnypic_picture_iv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:minHeight="250dp"
+                android:maxHeight="300dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_smile"/>
+            <ImageView android:id="@+id/funnypic_playicon_iv"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:src="@drawable/ic_startplay"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.srainbow.fragment.SmileFragment">
+
+    <LinearLayout android:id="@+id/smile_pageselect_llayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        
+        <TextView android:id="@+id/smile_joke_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:textSize="@dimen/textsize_smile_type"
+            android:text="@string/joke"
+            android:background="@drawable/selector_textview"/>
+        <TextView android:id="@+id/smile_picture_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:textSize="@dimen/textsize_smile_type"
+            android:text="@string/picture"
+            android:background="@drawable/selector_textview"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/smile_showfragment_llayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/smile_pageselect_llayout"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</RelativeLayout>

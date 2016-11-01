@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#CF3636</color>
+    <color name="colorPrimaryDark">#CF3636</color>
+    <color name="colorAccent">#831D1D</color>
+    <color name="colorMain">#C62F2F</color>
+    <color name="colorBackGround">#FAFAFC</color>
+    <color name="colorToolbarImg">#DAC2C2</color>
+    <color name="colorToolbarImgChange">#fff</color>
+    <color name="colorLine">#F5BEBE</color>
+    <color name="colorHeadlinesAuthor_Date">#D4C7C7</color>
+    <color name="swipe_color_1">#CF3636</color>
+    <color name="color_funny">#FBE354</color>
+    <color name="color_playicon">#D76464</color>
+    <color name="color_gray">#888888</color>
+    <color name="color_blank">#333333</color>
+    <color name="color_white">#fff</color>
+</resources>

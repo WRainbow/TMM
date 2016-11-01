@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:layout_marginBottom="15dp"
+    android:id="@+id/headlines_outerlinearlayout_llayout"
+    android:gravity="center">
+
+    <ImageView android:id="@+id/headlines_thumbnail_iv"
+        android:layout_width="85dp"
+        android:layout_height="85dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="5dp"
+        android:orientation="vertical">
+
+        <TextView android:id="@+id/headlines_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20sp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView android:id="@+id/headlines_author_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/colorHeadlinesAuthor_Date"/>
+            <TextView android:id="@+id/headlines_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorHeadlinesAuthor_Date"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

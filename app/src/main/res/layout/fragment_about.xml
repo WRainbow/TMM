@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.srainbow.fragment.drawer.AboutFragment">
+
+    <RelativeLayout android:id="@+id/about_title_llayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:background="@color/colorPrimary">
+        <ImageView android:id="@+id/about_backicon_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_back"/>
+        <TextView android:id="@+id/about_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/about"
+            android:textSize="25sp"
+            android:textColor="#FFF"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:layout_below="@id/about_title_llayout">
+        <ImageView android:id="@+id/about_appicon_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_10mm_100"/>
+
+        <TextView android:id="@+id/about_apifrom_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about_appicon_iv"
+            android:layout_marginTop="35dp"
+            android:text="@string/api_address"/>
+        <TextView android:id="@+id/about_contactme_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about_apifrom_tv"
+            android:layout_marginTop="15dp"
+            android:text="@string/contactme"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
